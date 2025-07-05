@@ -1,11 +1,15 @@
 import math
 print('='*30)
-n1 = int(input('Digite o primeiro número:'))
-n2 = int(input('Digite o segundo número:'))
+print('''Bem vindo à calculadora!!!
+Digite os dois números que você deseja utilizar, 
+e logo após a operação.''')
 print('='*30)
-operação = 0
-while operação != 11:
-    operação = int(input('''Digite qual operação você deseja fazer:
+number1 = int(input('Digite o primeiro número:'))
+number2 = int(input('Digite o segundo número:'))
+print('='*30)
+operation = 0
+while operation != 11:
+    operation = int(input('''Digite qual operation você deseja fazer:
 [1] Somar
 [2] Diminuir
 [3] Multiplicar
@@ -20,50 +24,50 @@ while operação != 11:
 '''))
     
     print('='*30)
-    if operação == 1:
-        print('A soma de {} + {} é igual a {}'.format(n1, n2, n1+n2))
+    if operation == 1:
+        print(f'A soma de {number1} + {number2} é igual a {number1+number2}')
         print('='*30)
-    if operação == 2:
-        print('A subtração de {} - {} é igual a {}'.format(n1, n2, n1-n2))
+    if operation == 2:
+        print(f'A subtração de {number1} - {number2} é igual a {number1-number2}')
         print('='*30)
-    if operação == 3:
-        print(' A multiplicação de {} vezes {} é igual a {}'.format(n1, n2, n1*n2))
+    if operation == 3:
+        print(f' A multiplicação de {number1} vezes {number2} é igual a {number1*number2}')
         print('='*30)
-    if operação == 4:
-        print(' A Divisão de {} vezes {} é igual a {}'.format(n1, n2, n1/n2))
+    if operation == 4:
+        print(f' A Divisão de {number1} vezes {number2} é igual a {number1/number2}')
         print('='*30)
-    if operação == 5:
-        print('O fatorial de {} é {}, e o fatorial de {} é {}'.format(n1, math.factorial(n1), n2, math.factorial(n2)))
+    if operation == 5:
+        print(f'O fatorial de {number1} é {math.factorial(number1)}, e o fatorial de {number2} é {math.factorial(number2)}')
         print('='*30)
-    if operação == 6:
-        print('{} elevado a {} é igual a {}'.format(n1, n2, n1**n2))
+    if operation == 6:
+        print(f'{number1} elevado a {number2} é igual a {number1**number2}')
         print('='*30)
-    if operação == 7:
-        print('A raiz de {} é {:.2f}, e a raiz de {} é {:.2f}'.format(n1, math.sqrt(n1), n2, math.sqrt(n2)))
-    if operação == 8:
-        if n1 > n2:
-            print('{} é maior do que {}'.format(n1, n2))
+    if operation == 7:
+        print(f'A raiz de {number1} é {math.sqrt(number1):.2f}, e a raiz de {number2} é {math.sqrt(number2):.2f}')
+    if operation == 8:
+        if number1 > number2:
+            print(f'{number1} é maior do que {number2}')
             print('='*30)
-        if n1 < n2:
-            print('{} é maior que {}'.format(n2, n1))
-            print('='*30)
-        else:
-            print('São iguais!!')
-            print('='*30)
-    if operação == 9:
-        if n1 < n2:
-            print('{} é menor do que {}'.format(n1, n2))
-            print('='*30)
-        if n1 > n2:
-            print('{} é menor que {}'.format(n2, n1))
+        if number1 < number2:
+            print(f'{number2} é maior que {number1}')
             print('='*30)
         else:
             print('São iguais!!')
             print('='*30)
-    if operação == 10:
-        n1 = int(input('Digite o primeiro número:'))
-        n2 = int(input('Digite o segundo número:'))
-    if operação > 11:
+    if operation == 9:
+        if number1 < number2:
+            print(f'{number1} é menor do que {number2}')
+            print('='*30)
+        if number1 > number2:
+            print(f'{number2} é menor que {number1}')
+            print('='*30)
+        else:
+            print('São iguais!!')
+            print('='*30)
+    if operation == 10:
+        number1 = int(input('Digite o primeiro número:'))
+        number2 = int(input('Digite o segundo número:'))
+    if operation > 11:
         print('Número inválido')
         print('='*30)
 print('Espero ter ajudado!!')
